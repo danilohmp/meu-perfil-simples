@@ -81,6 +81,11 @@ footer {
     color: white;
 }
 
+/* Estiliza os parágrafos dentro de uma seção */
+section p {
+    line-height: 1.6; /* Deixa o texto mais fácil de ler */
+    margin-bottom: 20px;
+
 /* Correção do alinhamento vertical no footer */
 footer {
     display: flex; /* Mantém os itens na linha (ou coluna) */
@@ -112,4 +117,5 @@ limites da página */
 header {
     margin-top: 10px;
     margin-left: 20px;
+
 }
