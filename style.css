@@ -1,0 +1,106 @@
+/* 1. Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Garante que padding e border fiquem DENTRO da largura do
+    elemento */
+}
+
+/* 2. Estilo do Corpo */
+body {
+    background-color: #f4f4f4; /*Cor de fundo suave */
+    font-family: arial, sans-serif;
+    color: #333;
+    line-height: 1.6
+}
+
+/* 3. Estilo do Conteúdo Principal */
+main {
+    max-width: 800px; /* Limita a largura em telas grandes */
+    margin: 40px auto; /* Centraliza o bloco principal (40px em cima/baixo,
+    auto nas laterais) */
+    padding: 20px;
+    background-color: white; /* Fundo branco para o conteúdo interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave; cria uma caixinha
+    para o conteúdo interno, que fica destacada do background */
+    border-radius: 8px; /* Deixa a borda arredondada */
+}
+
+/* 4. Estilizando Elementos – Imagem circular: Este é um ponto chave */
+img {
+    width: 150px; /* Define um tamanho fixo */
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+    border-radius: 50%; /* Torna a imagem perfeitamente redonda */
+    display: block; /* Para que margin: auto funcione */
+    margin: o auto 20px auto; /* Centraliza a imagem e adiciona margem abaixo */
+    border: 2px solid #00e1ff; /* Borda colorida */
+}
+
+/* 5. Lista (Skills) */
+ul {
+    list-style: none; /* Remove os marcadores padrão (os pontinhos) */
+    padding: 0;
+}
+
+/* 6. Opcional: Estilizar cada item da lista */
+li {
+    background-color: #cbdbf8;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: inline-block; /* Faz com que as skills fiquem lado a lado */
+}
+
+/* 7. O Efeito Hover (Pseudoclasses): Aplique mudança de cor nos links do footer
+quando o mouse passar por eles */
+/* 7.1. Estilo dos links */
+footer a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: white;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+/* 7.2. Efeito Hover */
+footer a:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Usando o Flexbox (ou contêiner flexível) no rodapé, para que os links fiquem
+lado a lado e centralizados */
+footer {
+    display: flex; /* Transforma o footer em um contêiner flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 15px; /* Adiciona espaço entre os itens flexíveis (os links) */
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #343a40;
+    color: white;
+}
+
+/* Responsividade com Media Query – Faça a imagem de perfil ficar menor em telas
+de celular */
+/* Media Query: Aplica estes estilos APENAS se a tela tiver no máximo 600px
+de largura */
+@media (max-width: 600px) {
+    main {
+        margin: 10px; /* Reduz a margem principal em telas menores */
+    }
+    img {
+        width: 100px; /* Diminui a imagem para 100px */
+        height: 100px;
+    }
+    h1 {
+        font-size: 1.8em; /* Diminui o tamanho do título principal */
+    }
+}
+
+/* Escolhi colocar um pouco de margem no header, porque ficou colado demais nos
+limites da página */
+header {
+    margin-top: 10px;
+    margin-left: 20px;
+}
