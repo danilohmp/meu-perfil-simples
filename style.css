@@ -85,6 +85,7 @@ footer {
 section p {
     line-height: 1.6; /* Deixa o texto mais fácil de ler */
     margin-bottom: 20px;
+}
 
 /* Correção do alinhamento vertical no footer */
 footer {
@@ -119,3 +120,4 @@ header {
     margin-left: 20px;
 
 }
+
