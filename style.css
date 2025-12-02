@@ -117,13 +117,12 @@ de largura */
 limites da página */
 header {
     margin-top: 10px;
+    margin-left: 20px;
+
+}
 
 /* Estiliza todos os títulos H3 que estão na página */
 h3 {
     margin-bottom: 1px;
 }
-    margin-left: 20px;
-
-}
-
 
